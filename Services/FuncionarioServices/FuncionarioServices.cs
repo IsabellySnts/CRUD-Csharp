@@ -1,9 +1,11 @@
 ﻿using ApiWeb.DataContext;
 using ApiWeb.Models;
 using Arch.EntityFrameworkCore;
+using Microsoft.AspNetCore.Cors;
 using System.Collections.Generic;
 
 namespace ApiWeb.Services.FuncionarioServices;
+
 
 public class FuncionarioServices : IFuncionarioInterface
 {

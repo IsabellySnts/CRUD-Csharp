@@ -1,10 +1,12 @@
 ﻿using ApiWeb.Models;
 using ApiWeb.Services.FuncionarioServices;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-
 namespace ApiWeb.Controller;
+
+[EnableCors("_PermitirOrigemEspecifica")]
 [Route("api/[controller]")]
 [ApiController]
 public class FuncionarioController : ControllerBase
